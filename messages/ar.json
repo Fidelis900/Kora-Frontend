@@ -690,7 +690,9 @@
     "invoiceCreation": "إنشاء الفواتير وسكّها",
     "liveData": "بيانات السوق المباشرة",
     "reload": "حاول مجددًا",
-    "browseCached": "تصفح الإدراجات المخزنة"
+    "browseCached": "تصفح الإدراجات المخزنة",
+    "pendingQueueTitle": "المعاملات الموقعة المعلقة",
+    "pendingQueueDesc": "تم توقيع هذه المعاملات ولكن تعذر إرسالها. ستتم إعادة المحاولة تلقائيًا عند إعادة الاتصال."
   },
   "notFound": {
     "title": "الصفحة غير موجودة",
@@ -1177,5 +1179,32 @@
     "openChangelogLabel": "فتح سجل التغييرات",
     "openChangelogUnreadLabel": "فتح سجل التغييرات (إصدار جديد متاح)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "تم تصدير التوقعات كملف PNG",
+    "exportError": "فشل تصدير المخطط"
+  },
+  "pendingQueue": {
+    "title": "{count, plural, one {# معاملة معلقة} other {# معاملات معلقة}}",
+    "emptyState": "لا توجد معاملات معلقة — تم إرسال جميع المظاريف الموقعة.",
+    "retryAll": "إعادة محاولة الكل",
+    "retryAriaLabel": "إعادة محاولة هذه المعاملة",
+    "removeAriaLabel": "تجاهل هذه المعاملة",
+    "offlineAriaLabel": "في انتظار الاتصال",
+    "listAriaLabel": "المعاملات الموقعة المعلقة",
+    "waitingOnline": "في الانتظار…",
+    "retrySuccess": "تم إرسال المعاملة بنجاح",
+    "retryFailed": "فشل الإرسال — ستتم إعادة المحاولة عند الاتصال بالإنترنت",
+    "removed": "تمت إزالة المسودة من قائمة الانتظار",
+    "txType": "{type}",
+    "unknownTx": "معاملة موقعة",
+    "invoiceLabel": "فاتورة #{id}",
+    "queuedAt": "في قائمة الانتظار {time}",
+    "attempts": "{count, plural, one {# محاولة} other {# محاولات}}",
+    "statusRetrying": "جارٍ إعادة المحاولة",
+    "statusSuccess": "تم الإرسال",
+    "statusError": "فشل",
+    "statusPending": "في قائمة الانتظار",
+    "badgeAriaLabel": "{count} معاملة (معاملات) معلقة"
   }
 }
