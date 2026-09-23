@@ -202,6 +202,32 @@
       "sources": "المصادر",
       "filterSource": "فلاتر السوق",
       "schemaSource": "مخطط البيانات الوصفية"
+    },
+    "comparison": {
+      "barAriaLabel": "شريط مقارنة الفواتير",
+      "compare": "مقارنة",
+      "loading": "جارٍ التحميل {id}…",
+      "add": "+ إضافة",
+      "shareAriaLabel": "نسخ رابط المقارنة القابل للمشاركة",
+      "share": "مشاركة",
+      "copied": "تم النسخ!",
+      "clearAriaLabel": "مسح جميع المقارنات",
+      "selectAtLeastTwo": "حدد فاتورتين على الأقل للمقارنة",
+      "openTable": "فتح جدول المقارنة"
+    },
+    "watchlist": {
+      "ariaLabel": "قائمة مراقبة الفواتير",
+      "closeAriaLabel": "إغلاق قائمة المراقبة",
+      "title": "قائمة المراقبة",
+      "watchedCount": "{count, plural, zero {# فاتورة مُتابعة} one {فاتورة مُتابعة واحدة} two {فاتورتان مُتابعتان} few {# فواتير مُتابعة} many {# فاتورة مُتابعة} other {# فاتورة مُتابعة}}",
+      "emptyState": "ميّز فاتورة بنجمة لتتبعها هنا.",
+      "raised": "تم جمعها",
+      "unstar": "إلغاء تمييز {invoiceNumber} بنجمة",
+      "alertPreferences": "تفضيلات التنبيهات",
+      "fundingProgress": "تقدم التمويل",
+      "statusChanges": "تغييرات الحالة",
+      "aprChanges": "تغييرات العائد السنوي",
+      "alertsPaused": "التنبيهات متوقفة مؤقتًا."
     }
   },
   "invoiceDetail": {
@@ -581,6 +607,23 @@
       "button": "ملخص PDF",
       "title": "ملخص المحفظة",
       "share": "مشاركة الملخص"
+    },
+    "a11y": {
+      "filterJurisdiction": "التصفية حسب الاختصاص القضائي",
+      "filterCategory": "التصفية حسب الفئة",
+      "clearFilters": "مسح جميع الفلاتر",
+      "exportPortfolio": "تصدير بيانات المحفظة",
+      "exportYield": "تصدير بيانات العائد",
+      "exportRisk": "تصدير بيانات المخاطر",
+      "exportReturn": "تصدير بيانات العوائد",
+      "exportVariance": "تصدير تباين العائد كملف CSV",
+      "exportSellerMetrics": "تصدير مقاييس البائع كملف CSV",
+      "sellerMetricsTable": "جدول مقاييس قوائم البائع",
+      "downloadDigest": "تنزيل ملخص المحفظة كملف PDF",
+      "resetFilters": "إعادة تعيين الفلاتر",
+      "exportData": "تصدير بيانات {label}",
+      "fromDate": "من تاريخ",
+      "toDate": "إلى تاريخ"
     }
   },
   "repaymentDialog": {
@@ -690,7 +733,32 @@
     "invoiceCreation": "إنشاء الفواتير وسكّها",
     "liveData": "بيانات السوق المباشرة",
     "reload": "حاول مجددًا",
-    "browseCached": "تصفح الإدراجات المخزنة"
+    "browseCached": "تصفح الإدراجات المخزنة",
+    "pendingQueueTitle": "المعاملات الموقعة المعلقة",
+    "pendingQueueDesc": "تم توقيع هذه المعاملات ولكن تعذر إرسالها. ستتم إعادة المحاولة تلقائيًا عند إعادة الاتصال."
+  },
+  "pendingQueue": {
+    "title": "{count, plural, one {# معاملة معلقة} other {# معاملات معلقة}}",
+    "emptyState": "لا توجد معاملات معلقة — تم إرسال جميع المظاريف الموقعة.",
+    "retryAll": "إعادة محاولة الكل",
+    "retryAriaLabel": "إعادة محاولة هذه المعاملة",
+    "removeAriaLabel": "تجاهل هذه المعاملة",
+    "offlineAriaLabel": "في انتظار الاتصال",
+    "listAriaLabel": "المعاملات الموقعة المعلقة",
+    "waitingOnline": "في الانتظار…",
+    "retrySuccess": "تم إرسال المعاملة بنجاح",
+    "retryFailed": "فشل الإرسال — ستتم إعادة المحاولة عند الاتصال بالإنترنت",
+    "removed": "تمت إزالة المسودة من قائمة الانتظار",
+    "txType": "{type}",
+    "unknownTx": "معاملة موقعة",
+    "invoiceLabel": "فاتورة #{id}",
+    "queuedAt": "في قائمة الانتظار {time}",
+    "attempts": "{count, plural, one {# محاولة} other {# محاولات}}",
+    "statusRetrying": "جارٍ إعادة المحاولة",
+    "statusSuccess": "تم الإرسال",
+    "statusError": "فشل",
+    "statusPending": "في قائمة الانتظار",
+    "badgeAriaLabel": "{count} معاملة (معاملات) معلقة"
   },
   "notFound": {
     "title": "الصفحة غير موجودة",
@@ -724,7 +792,10 @@
     "retry": "إعادة المحاولة",
     "dismiss": "تجاهل",
     "processing": "جارٍ المعالجة…",
-    "noResults": "لا توجد نتائج لـ \"{query}\""
+    "noResults": "لا توجد نتائج لـ \"{query}\"",
+    "selectOption": "اختر خيارًا...",
+    "selectDate": "اختر التاريخ...",
+    "searchOptions": "بحث في الخيارات..."
   },
   "verification": {
     "title": "التحقق من ملكية المحفظة",
@@ -818,7 +889,9 @@
     "hintSettings": "إعدادات الإشعارات",
     "navigate": "تنقل",
     "select": "تحديد",
-    "close": "إغلاق"
+    "close": "إغلاق",
+    "searchPlaceholder": "بحث في الاختصارات",
+    "searchAriaLabel": "بحث في الاختصارات"
   },
   "commandPalette": {
     "ariaLabel": "لوحة الأوامر",
