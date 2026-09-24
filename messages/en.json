@@ -805,7 +805,14 @@
     "createInvoice": "Create Invoice",
     "navigate": "navigate",
     "select": "select",
-    "close": "close"
+    "close": "close",
+    "synonyms": [
+      "connect wallet",
+      "create invoice",
+      "disconnect wallet",
+      "shortcuts",
+      "keyboard shortcuts"
+    ]
   },
   "feedback": {
     "sendFeedback": "Send Feedback",

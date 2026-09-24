@@ -834,7 +834,14 @@
     "createInvoice": "Criar Fatura",
     "navigate": "navegar",
     "select": "selecionar",
-    "close": "fechar"
+    "close": "fechar",
+    "synonyms": [
+      "conectar carteira",
+      "criar fatura",
+      "desconectar carteira",
+      "atalhos",
+      "atalhos de teclado"
+    ]
   },
   "feedback": {
     "sendFeedback": "Enviar Feedback",
