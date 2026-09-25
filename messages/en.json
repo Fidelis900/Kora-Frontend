@@ -157,6 +157,55 @@
       "dueSoonest": "Due Date: Soonest",
       "dueLatest": "Due Date: Latest",
       "newest": "Newest Listed"
+    },
+    "recovery": {
+      "clearRiskTiers": "Clear Risk Tiers",
+      "widenApr": "Widen APR Range",
+      "clearJurisdictions": "Clear Jurisdictions",
+      "clearCategories": "Clear Categories",
+      "showAllStatuses": "Show All Statuses"
+    },
+    "categoryLabels": {
+      "manufacturing": "Manufacturing",
+      "services": "Services",
+      "agriculture": "Agriculture",
+      "technology": "Technology",
+      "healthcare": "Healthcare",
+      "retail": "Retail",
+      "construction": "Construction",
+      "export": "Export",
+      "logistics": "Logistics",
+      "energy": "Energy",
+      "finance": "Finance",
+      "other": "Other"
+    },
+    "taxonomyPreview": {
+      "title": "Category Taxonomy Preview",
+      "badge": "Preview",
+      "subtitle": "Browse the full category taxonomy used across the marketplace",
+      "totalCategories": "Total Categories",
+      "activeCategories": "Active",
+      "unusedCategories": "Unused",
+      "missingTranslations": "Missing i18n",
+      "filterAll": "All",
+      "filterActive": "Active Only",
+      "filterUnused": "Unused Only",
+      "filterMissingI18n": "Missing i18n Only",
+      "searchPlaceholder": "Search categories…",
+      "key": "Key",
+      "label": "Label",
+      "icon": "Icon",
+      "inventoryCount": "Invoices",
+      "i18nStatus": "i18n Status",
+      "unusedWarning": "⚠ This category has no active invoices and may be removed.",
+      "copyTaxonomy": "Copy Taxonomy JSON",
+      "copied": "Copied!",
+      "close": "Close",
+      "openPreview": "Open Taxonomy Preview",
+      "sources": "Sources",
+      "filterSource": "Filter by Source",
+      "schemaSource": "Schema",
+      "marketplaceSource": "Marketplace"
     }
   },
   "invoiceDetail": {
@@ -467,7 +516,49 @@
       "totalYield": "Total Yield Earned",
       "annualisedReturn": "Annualised Return",
       "defaultRate": "Default Rate"
+    },
+    "treemap": {
+      "title": "Portfolio Allocation",
+      "empty": "No data to display",
+      "concentration": "Concentration"
+    },
+    "variance": {
+      "title": "Yield Variance",
+      "expected": "Expected Yield",
+      "realized": "Realized Yield",
+      "variance": "Variance",
+      "pending": "Pending",
+      "empty": "No variance data available",
+      "export": "Export Variance CSV"
+    },
+    "benchmarks": {
+      "riskFree": "Risk-Free Rate",
+      "basket": "Benchmark Basket",
+      "disclosure": "Benchmark data sourced from public indices. Past performance does not guarantee future results."
+    },
+    "digest": {
+      "button": "Generate Digest",
+      "title": "Portfolio Digest",
+      "share": "Share Digest"
     }
+  },
+  "amendment": {
+    "title": "Amend Invoice",
+    "formAriaLabel": "Invoice amendment form",
+    "eligibleFields": "Editable Fields",
+    "descriptionLabel": "Amendment Description",
+    "descriptionPlaceholder": "Describe the changes being made...",
+    "categoryLabel": "Category",
+    "lockedFieldsNotice": "These fields cannot be changed after the invoice is minted.",
+    "submit": "Submit Amendment",
+    "submitting": "Submitting...",
+    "cancel": "Cancel",
+    "noChanges": "No changes detected",
+    "unknownError": "An unknown error occurred",
+    "successTitle": "Amendment Submitted",
+    "successDesc": "Amendment submitted successfully.",
+    "newCid": "New CID",
+    "blockedTitle": "Amendment Blocked"
   },
   "repaymentDialog": {
     "title": "Confirm Repayment",

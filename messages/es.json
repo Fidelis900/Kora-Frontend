@@ -198,7 +198,8 @@
       "openPreview": "Vista Previa de Taxonomía",
       "sources": "Fuentes",
       "filterSource": "Filtros de Mercado",
-      "schemaSource": "Esquema de Metadatos"
+      "schemaSource": "Esquema de Metadatos",
+      "marketplaceSource": "Marketplace"
     }
   },
   "invoiceDetail": {
