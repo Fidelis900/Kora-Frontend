@@ -201,7 +201,8 @@
       "openPreview": "معاينة التصنيف",
       "sources": "المصادر",
       "filterSource": "فلاتر السوق",
-      "schemaSource": "مخطط البيانات الوصفية"
+      "schemaSource": "مخطط البيانات الوصفية",
+      "marketplaceSource": "Marketplace"
     }
   },
   "invoiceDetail": {
