@@ -183,3 +183,38 @@ test.describe("Accessibility audit — transaction history drawer", () => {
     await dialog.waitFor({ state: "hidden" });
   });
 });
+
+// ─── Settings, Secondary, Offline, Create Invoice (Issue #757) ─────────────────
+
+test.describe("Accessibility audit — settings (/settings)", () => {
+  test("no critical or serious axe violations", async ({ page }) => {
+    await page.goto("/settings");
+    await page.waitForLoadState("networkidle");
+    await auditPage(page);
+  });
+});
+
+test.describe("Accessibility audit — secondary market (/secondary)", () => {
+  test("no critical or serious axe violations", async ({ page }) => {
+    await page.goto("/secondary");
+    await page.waitForLoadState("networkidle");
+    await auditPage(page);
+  });
+});
+
+test.describe("Accessibility audit — offline (/offline)", () => {
+  test("no critical or serious axe violations", async ({ page }) => {
+    await page.goto("/offline");
+    await page.waitForLoadState("networkidle");
+    await auditPage(page);
+  });
+});
+
+test.describe("Accessibility audit — create invoice (/invoice/create)", () => {
+  test("no critical or serious axe violations", async ({ page }) => {
+    await page.goto("/invoice/create");
+    await page.waitForLoadState("networkidle");
+    await auditPage(page);
+  });
+});
+

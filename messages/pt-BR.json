@@ -690,7 +690,9 @@
     "invoiceCreation": "Criação e tokenização de faturas",
     "liveData": "Dados ao vivo do mercado",
     "reload": "Tentar Novamente",
-    "browseCached": "Navegar nas listagens em cache"
+    "browseCached": "Navegar nas listagens em cache",
+    "pendingQueueTitle": "Transações Assinadas Pendentes",
+    "pendingQueueDesc": "Essas transações foram assinadas, mas não puderam ser enviadas. Elas serão repetidas automaticamente quando você se reconectar."
   },
   "notFound": {
     "title": "Página não encontrada",
@@ -1177,5 +1179,32 @@
     "openChangelogLabel": "Abrir registro de alterações",
     "openChangelogUnreadLabel": "Abrir registro de alterações (nova versão disponível)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "Projeção exportada como PNG",
+    "exportError": "Falha ao exportar o gráfico"
+  },
+  "pendingQueue": {
+    "title": "{count, plural, one {# transação pendente} other {# transações pendentes}}",
+    "emptyState": "Nenhuma transação pendente — todos os envelopes assinados foram enviados.",
+    "retryAll": "Tentar novamente todas",
+    "retryAriaLabel": "Tentar novamente esta transação",
+    "removeAriaLabel": "Descartar esta transação",
+    "offlineAriaLabel": "Aguardando conexão",
+    "listAriaLabel": "Transações assinadas pendentes",
+    "waitingOnline": "Aguardando…",
+    "retrySuccess": "Transação enviada com sucesso",
+    "retryFailed": "Falha no envio — tentará novamente quando estiver online",
+    "removed": "Rascunho removido da fila",
+    "txType": "{type}",
+    "unknownTx": "Transação assinada",
+    "invoiceLabel": "Fatura #{id}",
+    "queuedAt": "Na fila {time}",
+    "attempts": "{count, plural, one {# tentativa} other {# tentativas}}",
+    "statusRetrying": "Tentando novamente",
+    "statusSuccess": "Enviado",
+    "statusError": "Falhou",
+    "statusPending": "Na fila",
+    "badgeAriaLabel": "{count} transação(ões) pendente(s)"
   }
 }
