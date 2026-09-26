@@ -122,6 +122,7 @@
     "shareFiltersCopied": "تم نسخ رابط الفلتر إلى الحافظة",
     "searchPlaceholder": "ابحث بالمدين أو رقم الفاتورة أو الجهة القضائية…",
     "clearSearch": "مسح البحث",
+    "searchAria": "البحث في السوق",
     "filters": "الفلاتر",
     "quickFilters": "فلاتر سريعة",
     "marketplaceFilters": "فلاتر السوق",
@@ -201,7 +202,8 @@
       "openPreview": "معاينة التصنيف",
       "sources": "المصادر",
       "filterSource": "فلاتر السوق",
-      "schemaSource": "مخطط البيانات الوصفية"
+      "schemaSource": "مخطط البيانات الوصفية",
+      "marketplaceSource": "Marketplace"
     }
   },
   "invoiceDetail": {
@@ -914,7 +916,14 @@
     "pageAnalytics": "التحليلات",
     "navigate": "تنقل",
     "select": "تحديد",
-    "close": "إغلاق"
+    "close": "إغلاق",
+    "synonyms": [
+      "ربط المحفظة",
+      "إنشاء فاتورة",
+      "فصل المحفظة",
+      "اختصارات",
+      "اختصارات لوحة المفاتيح"
+    ]
   },
   "feedback": {
     "sendFeedback": "إرسال ملاحظات",
@@ -1257,5 +1266,32 @@
     "openChangelogLabel": "فتح سجل التغييرات",
     "openChangelogUnreadLabel": "فتح سجل التغييرات (إصدار جديد متاح)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "تم تصدير التوقعات كملف PNG",
+    "exportError": "فشل تصدير المخطط"
+  },
+  "pendingQueue": {
+    "title": "{count, plural, one {# معاملة معلقة} other {# معاملات معلقة}}",
+    "emptyState": "لا توجد معاملات معلقة — تم إرسال جميع المظاريف الموقعة.",
+    "retryAll": "إعادة محاولة الكل",
+    "retryAriaLabel": "إعادة محاولة هذه المعاملة",
+    "removeAriaLabel": "تجاهل هذه المعاملة",
+    "offlineAriaLabel": "في انتظار الاتصال",
+    "listAriaLabel": "المعاملات الموقعة المعلقة",
+    "waitingOnline": "في الانتظار…",
+    "retrySuccess": "تم إرسال المعاملة بنجاح",
+    "retryFailed": "فشل الإرسال — ستتم إعادة المحاولة عند الاتصال بالإنترنت",
+    "removed": "تمت إزالة المسودة من قائمة الانتظار",
+    "txType": "{type}",
+    "unknownTx": "معاملة موقعة",
+    "invoiceLabel": "فاتورة #{id}",
+    "queuedAt": "في قائمة الانتظار {time}",
+    "attempts": "{count, plural, one {# محاولة} other {# محاولات}}",
+    "statusRetrying": "جارٍ إعادة المحاولة",
+    "statusSuccess": "تم الإرسال",
+    "statusError": "فشل",
+    "statusPending": "في قائمة الانتظار",
+    "badgeAriaLabel": "{count} معاملة (معاملات) معلقة"
   }
 }

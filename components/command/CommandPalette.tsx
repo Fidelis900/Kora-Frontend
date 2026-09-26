@@ -78,6 +78,8 @@ export function CommandPalette() {
   const setWalletModalOpen = useUIStore((s) => s.setWalletModalOpen);
   const [query, setQuery] = React.useState("");
   const { formatCurrency, formatPercentage } = useFormatters();
+  const t = useTranslations("commandPalette");
+  const synonyms = t("synonyms") as string[];
 
   const pageCommands = React.useMemo(
     () =>
@@ -276,17 +278,7 @@ export function CommandPalette() {
 
               {/* Actions */}
               {(showEmpty ||
-                [
-                  t("connectWallet"),
-                  t("createInvoice"),
-                  t("disconnectWallet"),
-                  t("shortcuts"),
-                  "connect wallet",
-                  "create invoice",
-                  "disconnect wallet",
-                  "shortcuts",
-                  "keyboard shortcuts",
-                ].some((a) => a.toLowerCase().includes(query.toLowerCase()))) && (
+                synonyms.some((a) => a.includes(query.toLowerCase()))) && (
                 <Command.Group
                   heading={
                     <GroupHeading icon={<Zap className="h-3 w-3" />} label={t("actionsLabel")} />
