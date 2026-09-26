@@ -14,7 +14,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "check:i18n": "node scripts/check-i18n.mjs"
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:i18n:unused": "node scripts/check-i18n.mjs --unused",
+    "check:i18n:unused:strict": "node scripts/check-i18n.mjs --unused --strict"
   },
   "dependencies": {
     "@creit.tech/stellar-wallets-kit": "^0.9.2",
