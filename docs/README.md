@@ -10,6 +10,7 @@ Project documentation lives here. GitHub-facing files (`CONTRIBUTING.md`, `SECUR
 | [Design System](./design-system.md) | Semantic tokens, theming, and UI primitives |
 | [Debtor Privacy](./debtor-privacy.md) | Debtor display rules and privacy constraints |
 | [Analytics Events](./analytics-events.md) | Marketplace analytics event schema (no PII) |
+| [Feature Flags](./feature-flags.md) | Feature flag reference, defaults, and local configuration |
 
 ## Repository docs (root)
 

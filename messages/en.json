@@ -51,22 +51,15 @@
     "restoringSession": "Restoring wallet session..."
   },
   "transaction": {
-    "building": "Building transaction...",
-    "simulating": "Simulating transaction...",
-    "signing": "Waiting for wallet signature...",
-    "submitting": "Submitting transaction...",
-    "polling": "Confirming transaction on-chain...",
+    "building": "Building transaction…",
+    "simulating": "Simulating transaction…",
+    "signing": "Waiting for wallet signature…",
+    "submitting": "Submitting to Stellar network…",
+    "polling": "Waiting for confirmation…",
     "confirmed": "Transaction confirmed!",
     "failed": "Transaction failed",
-    "cancelled": "Transaction signing cancelled",
-    "timedOut": "Transaction signing timed out",
-    "timeoutNotice": "Signing took too long to complete.",
-    "extendTime": "Extend Time (+60s)",
-    "retrySigning": "Retry Signing",
-    "cancelSigning": "Cancel Safely",
-    "hardwareTip": "Confirm on your hardware wallet",
-    "mobileTip": "Check your mobile wallet app",
-    "queuedOffline": "Network unavailable — signed transaction queued. It will be submitted automatically when you reconnect."
+    "retry": "Retry",
+    "dismiss": "Dismiss"
   },
   "landing": {
     "headline": "Invoice Financing, On-Chain",
@@ -162,6 +155,55 @@
       "dueSoonest": "Due Date: Soonest",
       "dueLatest": "Due Date: Latest",
       "newest": "Newest Listed"
+    },
+    "recovery": {
+      "clearRiskTiers": "Clear Risk Tiers",
+      "widenApr": "Widen APR Range",
+      "clearJurisdictions": "Clear Jurisdictions",
+      "clearCategories": "Clear Categories",
+      "showAllStatuses": "Show All Statuses"
+    },
+    "categoryLabels": {
+      "manufacturing": "Manufacturing",
+      "services": "Services",
+      "agriculture": "Agriculture",
+      "technology": "Technology",
+      "healthcare": "Healthcare",
+      "retail": "Retail",
+      "construction": "Construction",
+      "export": "Export",
+      "logistics": "Logistics",
+      "energy": "Energy",
+      "finance": "Finance",
+      "other": "Other"
+    },
+    "taxonomyPreview": {
+      "title": "Category Taxonomy Preview",
+      "badge": "Preview",
+      "subtitle": "Browse the full category taxonomy used across the marketplace",
+      "totalCategories": "Total Categories",
+      "activeCategories": "Active",
+      "unusedCategories": "Unused",
+      "missingTranslations": "Missing i18n",
+      "filterAll": "All",
+      "filterActive": "Active Only",
+      "filterUnused": "Unused Only",
+      "filterMissingI18n": "Missing i18n Only",
+      "searchPlaceholder": "Search categories…",
+      "key": "Key",
+      "label": "Label",
+      "icon": "Icon",
+      "inventoryCount": "Invoices",
+      "i18nStatus": "i18n Status",
+      "unusedWarning": "⚠ This category has no active invoices and may be removed.",
+      "copyTaxonomy": "Copy Taxonomy JSON",
+      "copied": "Copied!",
+      "close": "Close",
+      "openPreview": "Open Taxonomy Preview",
+      "sources": "Sources",
+      "filterSource": "Filter by Source",
+      "schemaSource": "Schema",
+      "marketplaceSource": "Marketplace"
     }
   },
   "invoiceDetail": {
@@ -517,7 +559,49 @@
       "totalYield": "Total Yield Earned",
       "annualisedReturn": "Annualised Return",
       "defaultRate": "Default Rate"
+    },
+    "treemap": {
+      "title": "Portfolio Allocation",
+      "empty": "No data to display",
+      "concentration": "Concentration"
+    },
+    "variance": {
+      "title": "Yield Variance",
+      "expected": "Expected Yield",
+      "realized": "Realized Yield",
+      "variance": "Variance",
+      "pending": "Pending",
+      "empty": "No variance data available",
+      "export": "Export Variance CSV"
+    },
+    "benchmarks": {
+      "riskFree": "Risk-Free Rate",
+      "basket": "Benchmark Basket",
+      "disclosure": "Benchmark data sourced from public indices. Past performance does not guarantee future results."
+    },
+    "digest": {
+      "button": "Generate Digest",
+      "title": "Portfolio Digest",
+      "share": "Share Digest"
     }
+  },
+  "amendment": {
+    "title": "Amend Invoice",
+    "formAriaLabel": "Invoice amendment form",
+    "eligibleFields": "Editable Fields",
+    "descriptionLabel": "Amendment Description",
+    "descriptionPlaceholder": "Describe the changes being made...",
+    "categoryLabel": "Category",
+    "lockedFieldsNotice": "These fields cannot be changed after the invoice is minted.",
+    "submit": "Submit Amendment",
+    "submitting": "Submitting...",
+    "cancel": "Cancel",
+    "noChanges": "No changes detected",
+    "unknownError": "An unknown error occurred",
+    "successTitle": "Amendment Submitted",
+    "successDesc": "Amendment submitted successfully.",
+    "newCid": "New CID",
+    "blockedTitle": "Amendment Blocked"
   },
   "repaymentDialog": {
     "title": "Confirm Repayment",
@@ -570,17 +654,6 @@
       "dueDate": "Due Date",
       "fundedAmount": "Funded Amount"
     }
-  },
-  "transaction": {
-    "building": "Building transaction…",
-    "simulating": "Simulating transaction…",
-    "signing": "Waiting for wallet signature…",
-    "submitting": "Submitting to Stellar network…",
-    "polling": "Waiting for confirmation…",
-    "confirmed": "Transaction confirmed!",
-    "failed": "Transaction failed",
-    "retry": "Retry",
-    "dismiss": "Dismiss"
   },
   "txSimulation": {
     "title": "Transaction Preview",
@@ -806,7 +879,14 @@
     "createInvoice": "Create Invoice",
     "navigate": "navigate",
     "select": "select",
-    "close": "close"
+    "close": "close",
+    "synonyms": [
+      "connect wallet",
+      "create invoice",
+      "disconnect wallet",
+      "shortcuts",
+      "keyboard shortcuts"
+    ]
   },
   "feedback": {
     "sendFeedback": "Send Feedback",
@@ -1131,5 +1211,9 @@
     "openChangelogLabel": "Open changelog",
     "openChangelogUnreadLabel": "Open changelog (new release available)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "Projection exported as PNG",
+    "exportError": "Failed to export chart"
   }
 }

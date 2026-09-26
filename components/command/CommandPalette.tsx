@@ -27,6 +27,7 @@ import { useWallet } from "@/hooks/useWallet";
 import { useUIStore } from "@/store/uiStore";
 import { useFormatters } from "@/hooks/useFormatters";
 import { useWalletStore } from "@/store";
+import { useTranslations } from "next-intl";
 
 const SEARCH_DEBOUNCE_MS = 300;
 
@@ -76,6 +77,8 @@ export function CommandPalette() {
   const setWalletModalOpen = useUIStore((s) => s.setWalletModalOpen);
   const [query, setQuery] = React.useState("");
   const { formatCurrency, formatPercentage } = useFormatters();
+  const t = useTranslations("commandPalette");
+  const synonyms = t("synonyms") as string[];
 
   // Fetch invoices for search (only when palette is open)
   const { data: invoiceData } = useInvoices();
@@ -265,9 +268,7 @@ export function CommandPalette() {
 
               {/* Actions */}
               {(showEmpty ||
-                ["connect wallet", "create invoice", "disconnect wallet", "shortcuts", "keyboard shortcuts"].some((a) =>
-                  a.includes(query.toLowerCase())
-                )) && (
+                synonyms.some((a) => a.includes(query.toLowerCase()))) && (
                 <Command.Group
                   heading={
                     <GroupHeading icon={<Zap className="h-3 w-3" />} label="Actions" />
