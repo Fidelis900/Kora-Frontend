@@ -30,8 +30,24 @@ import userEvent from "@testing-library/user-event";
 import { CommandPalette } from "@/components/command/CommandPalette";
 import { createMockInvoice } from "@/__tests__/fixtures";
 import type { RecentItem } from "@/hooks/useCommandPalette";
+import enMessages from "@/messages/en.json";
 
 // ── Mocks ──────────────────────────────────────────────────────────────────────
+
+vi.mock("next-intl", () => ({
+  useTranslations: (namespace?: string) => {
+    const ns = namespace ? (enMessages as Record<string, any>)[namespace] : enMessages;
+    return (key: string, values?: Record<string, string>) => {
+      let str = ns?.[key] ?? key;
+      if (values) {
+        for (const [k, v] of Object.entries(values)) {
+          str = str.replace(`{${k}}`, v);
+        }
+      }
+      return str;
+    };
+  },
+}));
 
 const pushMock = vi.fn();
 vi.mock("next/navigation", () => ({
