@@ -87,7 +87,25 @@ styles, and use `cn()` from `lib/utils` for conditional class merging.
 
 ## Storybook
 
-Component stories live alongside components as `*.stories.tsx` files. Run Storybook locally when iterating on visual states (see `CONTRIBUTING.md`).
+Component stories live alongside components as `*.stories.tsx` files. Storybook
+packages are **not currently wired** as an `npm run storybook` script — visual
+coverage runs through the Vitest snapshot test instead. See
+[`CONTRIBUTING.md`](../CONTRIBUTING.md).
+
+Run the snapshot suite for stories:
+
+```bash
+npm run test -- __tests__/stories.snapshot.test.tsx
+```
+
+If you make intentional markup changes, regenerate the committed snapshots:
+
+```bash
+npm run test -- __tests__/stories.snapshot.test.tsx -u
+```
+
+Snapshots are stored in `__tests__/__snapshots__/` and must be committed with
+your change.
 
 ## Adding new tokens
 
