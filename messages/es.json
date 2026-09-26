@@ -836,7 +836,14 @@
     "createInvoice": "Crear Factura",
     "navigate": "navegar",
     "select": "seleccionar",
-    "close": "cerrar"
+    "close": "cerrar",
+    "synonyms": [
+      "conectar billetera",
+      "crear factura",
+      "desconectar billetera",
+      "atajos",
+      "atajos de teclado"
+    ]
   },
   "feedback": {
     "sendFeedback": "Enviar Comentarios",
