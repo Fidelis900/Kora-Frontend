@@ -201,7 +201,8 @@
       "openPreview": "Vista Previa de Taxonomía",
       "sources": "Fuentes",
       "filterSource": "Filtros de Mercado",
-      "schemaSource": "Esquema de Metadatos"
+      "schemaSource": "Esquema de Metadatos",
+      "marketplaceSource": "Marketplace"
     },
     "comparison": {
       "barAriaLabel": "Barra de comparación de facturas",
@@ -228,7 +229,8 @@
       "statusChanges": "Cambios de estado",
       "aprChanges": "Cambios de TAE",
       "alertsPaused": "Las alertas están pausadas."
-    }
+    },
+    "searchAria": "Buscar en el mercado"
   },
   "invoiceDetail": {
     "backToMarketplace": "Volver al Mercado",
@@ -567,7 +569,53 @@
     "statusFilterAria": "Filtrar por estado",
     "statusLabels": {
       "confirmed": "Confirmada",
-      "failed": "Fallida"
+      "failed": "Fallida",
+      "pending": "Pendiente"
+    },
+    "typeLabels": {
+      "mint_invoice": "Acuñar Factura",
+      "fund_invoice": "Financiar Factura",
+      "repay_invoice": "Pagar Factura",
+      "claim_yield": "Reclamar Rendimiento",
+      "transfer": "Transferir",
+      "other": "Transacción"
+    },
+    "drawer": {
+      "title": "Transacciones",
+      "closeAria": "Cerrar historial de transacciones",
+      "filters": "Filtros",
+      "reset": "Restablecer",
+      "filterByTypeAria": "Filtrar por tipo",
+      "startDatePlaceholder": "Fecha inicial",
+      "startDateFilterAria": "Filtro de fecha inicial",
+      "endDatePlaceholder": "Fecha final",
+      "endDateFilterAria": "Filtro de fecha final",
+      "emptyTitle": "Sin transacciones aún",
+      "emptyDesc": "Las transacciones aparecerán aquí",
+      "noResultsTitle": "Sin resultados",
+      "noResultsDesc": "Intenta ajustar tus filtros",
+      "export": "Exportar",
+      "exportAria": "Exportar transacciones a CSV",
+      "clearAria": "Limpiar historial de transacciones",
+      "clearConfirm": "¿Limpiar todo el historial de transacciones? Esta acción no se puede deshacer.",
+      "detailsTitle": "Detalles de la Transacción",
+      "closeDetailsAria": "Cerrar detalles de la transacción",
+      "type": "Tipo",
+      "txHash": "Hash de Transacción",
+      "copyHashAria": "Copiar hash",
+      "status": "Estado",
+      "amount": "Monto",
+      "dateTime": "Fecha y Hora",
+      "onChainDetails": "Detalles en Cadena",
+      "ledger": "Libro Mayor",
+      "feePaid": "Tarifa Pagada",
+      "confirmedAt": "Confirmado en",
+      "operations": "Operaciones",
+      "memo": "Memo",
+      "detailsUnavailable": "Detalles no disponibles",
+      "description": "Descripción",
+      "error": "Error",
+      "viewExplorer": "Ver en Explorer"
     }
   },
   "analytics": {
@@ -907,7 +955,23 @@
     "createInvoice": "Crear Factura",
     "navigate": "navegar",
     "select": "seleccionar",
-    "close": "cerrar"
+    "close": "cerrar",
+    "disconnectWallet": "Desconectar Billetera",
+    "shortcuts": "Atajos",
+    "resultsLabel": "Resultados de comandos",
+    "pageMarketplace": "Mercado",
+    "pageSecondary": "Mercado Secundario",
+    "pageInvest": "Panel del Inversor",
+    "pageSme": "Mis Facturas",
+    "pageTransactions": "Historial de Transacciones",
+    "pageAnalytics": "Analíticas",
+    "synonyms": [
+      "conectar billetera",
+      "crear factura",
+      "desconectar billetera",
+      "atajos",
+      "atajos de teclado"
+    ]
   },
   "feedback": {
     "sendFeedback": "Enviar Comentarios",
@@ -1250,5 +1314,9 @@
     "openChangelogLabel": "Abrir registro de cambios",
     "openChangelogUnreadLabel": "Abrir registro de cambios (nueva versión disponible)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "Proyección exportada como PNG",
+    "exportError": "Error al exportar el gráfico"
   }
 }

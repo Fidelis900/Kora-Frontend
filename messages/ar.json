@@ -201,7 +201,8 @@
       "openPreview": "معاينة التصنيف",
       "sources": "المصادر",
       "filterSource": "فلاتر السوق",
-      "schemaSource": "مخطط البيانات الوصفية"
+      "schemaSource": "مخطط البيانات الوصفية",
+      "marketplaceSource": "Marketplace"
     },
     "comparison": {
       "barAriaLabel": "شريط مقارنة الفواتير",
@@ -228,7 +229,8 @@
       "statusChanges": "تغييرات الحالة",
       "aprChanges": "تغييرات العائد السنوي",
       "alertsPaused": "التنبيهات متوقفة مؤقتًا."
-    }
+    },
+    "searchAria": "البحث في السوق"
   },
   "invoiceDetail": {
     "backToMarketplace": "العودة إلى السوق",
@@ -567,7 +569,53 @@
     "statusFilterAria": "تصفية حسب الحالة",
     "statusLabels": {
       "confirmed": "مؤكدة",
-      "failed": "فاشلة"
+      "failed": "فاشلة",
+      "pending": "معلقة"
+    },
+    "typeLabels": {
+      "mint_invoice": "سك فاتورة",
+      "fund_invoice": "تمويل فاتورة",
+      "repay_invoice": "سداد فاتورة",
+      "claim_yield": "المطالبة بالعائد",
+      "transfer": "تحويل",
+      "other": "معاملة"
+    },
+    "drawer": {
+      "title": "المعاملات",
+      "closeAria": "إغلاق سجل المعاملات",
+      "filters": "عوامل التصفية",
+      "reset": "إعادة ضبط",
+      "filterByTypeAria": "تصفية حسب النوع",
+      "startDatePlaceholder": "تاريخ البدء",
+      "startDateFilterAria": "تصفية تاريخ البدء",
+      "endDatePlaceholder": "تاريخ الانتهاء",
+      "endDateFilterAria": "تصفية تاريخ الانتهاء",
+      "emptyTitle": "لا توجد معاملات بعد",
+      "emptyDesc": "ستظهر المعاملات هنا",
+      "noResultsTitle": "لا توجد نتائج",
+      "noResultsDesc": "حاول ضبط عوامل التصفية",
+      "export": "تصدير",
+      "exportAria": "تصدير المعاملات إلى CSV",
+      "clearAria": "مسح سجل المعاملات",
+      "clearConfirm": "هل تريد مسح كل سجل المعاملات؟ لا يمكن التراجع عن هذا الإجراء.",
+      "detailsTitle": "تفاصيل المعاملة",
+      "closeDetailsAria": "إغلاق تفاصيل المعاملة",
+      "type": "النوع",
+      "txHash": "تجزئة المعاملة",
+      "copyHashAria": "نسخ التجزئة",
+      "status": "الحالة",
+      "amount": "المبلغ",
+      "dateTime": "التاريخ والوقت",
+      "onChainDetails": "التفاصيل على السلسلة",
+      "ledger": "دفتر الأستاذ",
+      "feePaid": "الرسوم المدفوعة",
+      "confirmedAt": "تم التأكيد في",
+      "operations": "العمليات",
+      "memo": "الملاحظة",
+      "detailsUnavailable": "التفاصيل غير متوفرة",
+      "description": "الوصف",
+      "error": "خطأ",
+      "viewExplorer": "عرض في المستكشف"
     }
   },
   "analytics": {
@@ -907,7 +955,23 @@
     "createInvoice": "إنشاء فاتورة",
     "navigate": "تنقل",
     "select": "تحديد",
-    "close": "إغلاق"
+    "close": "إغلاق",
+    "disconnectWallet": "قطع اتصال المحفظة",
+    "shortcuts": "اختصارات",
+    "resultsLabel": "نتائج الأوامر",
+    "pageMarketplace": "السوق",
+    "pageSecondary": "السوق الثانوية",
+    "pageInvest": "لوحة تحكم المستثمر",
+    "pageSme": "فواتيري",
+    "pageTransactions": "سجل المعاملات",
+    "pageAnalytics": "التحليلات",
+    "synonyms": [
+      "ربط المحفظة",
+      "إنشاء فاتورة",
+      "فصل المحفظة",
+      "اختصارات",
+      "اختصارات لوحة المفاتيح"
+    ]
   },
   "feedback": {
     "sendFeedback": "إرسال ملاحظات",
@@ -1250,5 +1314,9 @@
     "openChangelogLabel": "فتح سجل التغييرات",
     "openChangelogUnreadLabel": "فتح سجل التغييرات (إصدار جديد متاح)",
     "copyright": "© {year} Kora Protocol"
+  },
+  "yieldProjection": {
+    "exportSuccess": "تم تصدير التوقعات كملف PNG",
+    "exportError": "فشل تصدير المخطط"
   }
 }
